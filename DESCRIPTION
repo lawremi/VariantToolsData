@@ -1,0 +1,14 @@
+Package: VariantToolsData
+Type: Package
+Version: 0.99.0
+Maintainer: Michael Lawrence <michafla@gene.com>
+License: Artistic-2.0
+Title: Data for the VariantTools tutorial
+Author: Michael Lawrence
+Description: Data from the sequencing of a 50/50 mixture of HapMap trio
+        samples NA12878 (CEU) and NA19240 (YRI), subset to the TP53
+        region.
+Suggests: VariantTools (>= 1.3.4), gmapR (>= 1.3.3), BiocStyle
+Imports: BiocGenerics
+Depends: R (>= 2.10), VariantAnnotation (>= 1.7.35)
+biocViews: ExperimentData, SequencingData, HapMap, SNPData

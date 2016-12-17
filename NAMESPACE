@@ -1,0 +1,3 @@
+import(BiocGenerics)
+import(VariantAnnotation)
+export(sumDepths)

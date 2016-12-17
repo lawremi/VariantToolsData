@@ -1,0 +1,6 @@
+#+TITLE: The VariantToolsData Package
+
+* Overview
+  
+A data package containing data (FASTQ reads, BAM alignments, and
+summary objects) used for demostrating VariantTools.

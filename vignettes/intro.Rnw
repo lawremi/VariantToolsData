@@ -1,0 +1,44 @@
+% \VignetteIndexEntry{VariantTools Example Data}
+% \VignetteKeywords{data, variants}
+% \VignettePackage{VariantToolsData}
+\documentclass[10pt]{article}
+
+<<style-Sweave, eval=TRUE, echo=FALSE, results=tex>>=
+BiocStyle::latex2()
+@
+
+\bioctitle[VariantTools Data]{Data for the VariantTools Tutorial}
+
+\author{Michael Lawrence\thanks{\email{michafla@gene.com}}\\Genentech}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\packageVersion{\Sexpr{BiocStyle::pkg_ver("VariantToolsData")}}
+\tableofcontents
+\newpage
+
+\section{Overview}
+
+In support of the tutorial vignette for the \Biocpkg{VariantTools}
+package, \Biocpkg{VariantToolsData} provides a dataset derived from
+sequencing a 50/50 mixture of the HapMap samples NA12878 and NA19240,
+where the mixing was performed in triplicate (\cite{dataset}). The
+data are subset over the region of TP53 (+/- 1 Mb).
+
+There are several summarized objects accessible via \Rcode{data()} and
+documented in the package manual. In addition, there are data files
+stored here:
+<<files>>=
+dir(system.file("extdata", package="VariantToolsData"))
+@ 
+These include FASTQ files with the raw reads and BAM files with the
+alignments, as well as a VCF file derived from dbSNP.
+
+Please see the \Biocpkg{VariantTools} vignette to learn how to work
+with these data with \Bioconductor{}.
+
+\bibliography{intro}
+
+\end{document}
