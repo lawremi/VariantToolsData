@@ -1,6 +1,6 @@
 Package: VariantToolsData
 Type: Package
-Version: 1.1.0
+Version: 1.1.1
 Maintainer: Michael Lawrence <michafla@gene.com>
 License: Artistic-2.0
 Title: Data for the VariantTools tutorial
